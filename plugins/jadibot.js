@@ -18,7 +18,7 @@ switch (true) {
 case isCommand1:
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let uniqid = `${who.split`@`[0]}`
-const path = `./GataJadiBot/${uniqid}`
+const path = `./TekaJadiBot/${uniqid}`
 let comd = `${lenguajeGB.lenguaje() == 'es' ? 'serbot' : 'jadibot'}`
 let comd2 = `${lenguajeGB.lenguaje() == 'es' ? 'pausarsb' : 'pausesb'}`
 
@@ -30,7 +30,7 @@ if (global.conn.user.jid !== conn.user.jid) return conn.sendMessage(m.chat, {tex
 else {
 await conn.sendMessage(m.chat, { text: lenguajeGB.smsJBAdios() }, { quoted: m })}
 try {
-fs.rmdir("./GataJadiBot/" + uniqid, { recursive: true, force: true })
+fs.rmdir("./TekaJadiBot/" + uniqid, { recursive: true, force: true })
 await conn.sendMessage(m.chat, { text : lenguajeGB.smsJBCerrarS() } , { quoted: m })
 } catch (e) {
 reportError(e)

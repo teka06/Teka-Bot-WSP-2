@@ -47,9 +47,9 @@ await m.react(notsent)
 
 switch (true) {     
 case isCommand1:
-if (!text) return m.reply(lenguajeGB.smsMalused2() + `\n*${usedPrefix + command} Gata*`)
+if (!text) return m.reply(lenguajeGB.smsMalused2() + `\n*${usedPrefix + command} Teka*`)
 const prohibited = ['caca', 'polla', 'porno', 'porn', 'gore', 'cum', 'semen', 'puta', 'puto', 'culo', 'putita', 'putito','pussy', 'hentai', 'pene', 'coño', 'asesinato', 'zoofilia', 'mia khalifa', 'desnudo', 'desnuda', 'cuca', 'chocha', 'muertos', 'pornhub', 'xnxx', 'xvideos', 'teta', 'vagina', 'marsha may', 'misha cross', 'sexmex', 'furry', 'furro', 'furra', 'xxx', 'rule34', 'panocha', 'pedofilia', 'necrofilia', 'pinga', 'horny', 'ass', 'nude', 'popo', 'nsfw', 'femdom', 'futanari', 'erofeet', 'sexo', 'sex', 'yuri', 'ero', 'ecchi', 'blowjob', 'anal', 'ahegao', 'pija', 'verga', 'trasero', 'violation', 'violacion', 'bdsm', 'cachonda', '+18', 'cp', 'mia marin', 'lana rhoades', 'cepesito', 'hot']
-if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('⚠️😾')      
+if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('⚠️')      
 try{
     
 const res = await googleImage(text)
@@ -661,7 +661,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: igfg, 
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu2.jpg"),
-sourceUrl: `https://github.com/GataNina-Li/GataBotLite-MD`}}})
+sourceUrl: `https://github.com/teka06`}}})
 if (!regex.test(args[0])) throw 'LINK INCORRECTO';
 let [_, user, repo] = args[0].match(regex) || [];
 repo = repo.replace(/.git$/, '');

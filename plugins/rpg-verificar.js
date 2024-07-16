@@ -14,7 +14,7 @@ let nombresIdiomas = {
 }
   
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => gataImg.getRandom())
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => tekaImg.getRandom())
   
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]
@@ -147,7 +147,7 @@ let nombresIdiomas = {
 }
   
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => gataImg.getRandom())
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => tekaImg.getRandom())
   
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]
@@ -272,7 +272,7 @@ let caption = `${lenguajeGB.smsVerify7()}
 *⎔ ${lenguajeGB.smsPerfil5()}*
 • \`\`\`${sn}\`\`\``.trim()
 
-await conn.sendFile(m.chat, pp, 'gata.jpg', caption, m, false, { mentions: [aa] }) 
+await conn.sendFile(m.chat, pp, 'teka.jpg', caption, m, false, { mentions: [aa] }) 
 await m.reply(lenguajeGB.smsVerify8(usedPrefix)) 
 await m.reply(`${sn}`)
 userData.confirmacion = false

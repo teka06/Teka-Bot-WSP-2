@@ -14,17 +14,17 @@ import ws from 'ws';
 let handler = async (m, { conn, command, usedPrefix, args, text, __dirname, isOwner, isRowner, DevMode }) => {
 let name, _uptime, _muptime, uptime, totalreg, fkontak, rtotalreg, frep, _package, taguser, groups
 const grupo = [nna, nn2, nn, nnn, nnnt, nnntt, nnnttt, nnnttt1, nnnttt2, nnnttt3, nnnttt4] 
-frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCreApoyo(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(gataMenu.getRandom())).buffer() }}}
+frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCreApoyo(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(tekaMenu.getRandom())).buffer() }}}
 fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 const isCommand1 = /^(estado|status|estate|state|stado|stats|botstat(us)?)$/i.test(command)  
-const isCommand2 = /^(cuenta(s)?oficiales?|gataig|(cuentas|account)s?g?b|(ig)?gata|(cuentasgata))$/i.test(command)  
-const isCommand3 = /^(gata(bot)?groups?|grupos(ofc|degatabot|gb)|grupogb|groupsgb|gatagroups?|grupos|group(ofc|sofc))$/i.test(command) 
+const isCommand2 = /^(cuenta(s)?oficiales?|tekaig|(cuentas|account)s?g?b|(ig)?teka|(cuentasteka))$/i.test(command)  
+const isCommand3 = /^(teka(bot)?groups?|grupos(ofc|detekabot|gb)|grupogb|groupsgb|tekagroups?|grupos|group(ofc|sofc))$/i.test(command) 
 const isCommand4 = /^(c(ó|o)digo|sc|git|script)$/i.test(command) 
-const isCommand5 = /^(instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot)$/i.test(command) 
+const isCommand5 = /^(instalar(teka)?bot|proceso(del)?bot|bot(install|proceso)|installbot)$/i.test(command) 
 const isCommand6 = /^(owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i.test(command) 
 const isCommand7 = /^(group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista)$/i.test(command) 
-const isCommand8 = /^(info(gata|bot)|informaci(ón|on)(gata|bot))$/i.test(command) 
+const isCommand8 = /^(info(teka|bot)|informaci(ón|on)(teka|bot))$/i.test(command) 
 const isCommand9 = /^(contactos?|contacts?)$/i.test(command) 
 const isCommand10 = /^(ping|speed|velocidad|rapidez|velocity)$/i.test(command) 
 const isCommand11 = /^(dona(te|si)|donar|apoyar|paypal|donating|aportar)$/i.test(command) 
@@ -58,7 +58,7 @@ let estado = `*╭𝄗𝄗✦ --${lenguajeGB.smsEstado1()}-- ✦𝄗𝄗⬣*
  ⎸ ┈┈┈┈┈┈┈┈┈┈┈
  ⎸ ❉ *${lenguajeGB.smsEstado7()}* ➺ *_${uptime}_*
 *╰𝄗𝄗𝄗𝄗𝄗⬣*`.trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', estado, fkontak)
+await conn.sendFile(m.chat, tekaImg.getRandom(), 'gata.jpg', estado, fkontak)
 } catch (e) {
 reportError(e)
 }   
@@ -66,7 +66,6 @@ break
     
 case isCommand2:
 try{
-let media = './media/menus/Menu2.jpg'
 let str = `
 ◎ *GITHUB*
 *${md}*\n
@@ -99,7 +98,7 @@ _⭔ ${grupo[7]}_\n
 _⭔ ${grupo[8]}_\n
 _⭔ ${grupo[9]}_\n
 _⭔ ${grupo[10]}_`.trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', str, fkontak)   
+await conn.sendFile(m.chat, tekaImg.getRandom(), 'gata.jpg', str, fkontak)   
 } catch (e) {
 reportError(e)
 }    
@@ -108,7 +107,7 @@ break
 case isCommand4:
 try{ 
 _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', `*_${_package.homepage}_*\n\n` + lenguajeGB.smsPrivadoDonar(), fkontak)    
+await conn.sendFile(m.chat, tekaImg.getRandom(), 'gata.jpg', `*_${_package.homepage}_*\n\n` + lenguajeGB.smsPrivadoDonar(), fkontak)    
 } catch (e) {
 reportError(e)
 }    
@@ -159,7 +158,7 @@ case isCommand6:
 try{   
 taguser = conn.getName(m.sender)
 _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-let pp = await conn.profilePictureUrl(`${global.conn.user.jid.split`@`[0]}` + '@s.whatsapp.net', 'image').catch(_ => gataImg.getRandom())
+let pp = await conn.profilePictureUrl(`${global.conn.user.jid.split`@`[0]}` + '@s.whatsapp.net', 'image').catch(_ => tekaImg.getRandom())
 let aa = `*_🍄 ${lenguajeGB.smsCreA()} ${taguser}, ${lenguajeGB.smsCreB()} ${_package.name} ${lenguajeGB.smsCreC()}_*\n\n` 
 let bb = `${packname}\n*◎ Wa.me/${owner[0][0]}*\n\n`
 await conn.sendFile(m.chat, pp, 'gata.jpg', aa + bb + ig, fkontak) 
@@ -216,13 +215,13 @@ let info = `
 🌻꙰᠁❥ *◜${lenguajeGB.smsVl1()}◞* ⇢ ${(speed * 1000).toFixed(0) / 1000}
 🌼꙰᠁❥ *◜${lenguajeGB.smsBT9()}◞* ⇢ ${totaljadibot.length}`.trim()
 
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', info, fkontak) 
+await conn.sendFile(m.chat, tekaImg.getRandom(), 'gata.jpg', info, fkontak) 
 } catch (e) {
 reportError(e)
 }     
 break
 
-//CÓDIGO CREADO GRACIAS A https://github.com/Azami19 & https://github.com/GataNina-Li
+
 case isCommand9:
 try{
 let contact, number, ofc, nombre, description, correo, lugar, enlace, biog
@@ -237,12 +236,12 @@ ofc = await conn.getName(number + '@s.whatsapp.net') //String(contact[1])
 let biografia = await conn.fetchStatus(number +'@s.whatsapp.net').catch(_ => 'undefined')
 let bio = biografia.status?.toString() || `${desc2 == '' ? lenguajeGB.smsContacto2() : desc2}`
 nombre = official[0][0] == String(contact[0]) ? official[0][1] : official[1][0] == String(contact[0]) ? official[1][1] : official[2][0] == String(contact[0]) ? official[2][1] : official[3][0] == String(contact[0]) ? official[3][1] : lenguajeGB.smsContacto3() 
-description = official[0][0] == String(contact[0]) ? 'Solo temas de GataBot' : official[1][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[2][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[3][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : desc === '' ? lenguajeGB.smsContacto5() : desc
-correo = official[0][0] == String(contact[0]) ? 'socialplus.gata@gamil.com' : official[1][0] == String(contact[0]) ? 'thelolibotm@gmail.com' : official[2][0] == String(contact[0]) ? 'alexismaldonado90700@gmail.com' : mail === '' ? lenguajeGB.smsContacto6() : mail
-lugar = official[0][0] == String(contact[0]) ? '🇪🇨 Ecuador' : official[1][0] == String(contact[0]) ? '🇦🇷 Argentina' : official[2][0] == String(contact[0]) ? '🇲🇽 México' : official[3][0] == String(contact[0]) ? '🇧🇷 Brazil' : country === '' ? lenguajeGB.smsContacto7() : country
-enlace = official[0][0] == String(contact[0]) ? 'https://github.com/GataNina-Li' : official[1][0] == String(contact[0]) ? 'https://github.com/elrebelde21' : official[2][0] == String(contact[0]) ? 'https://github.com/Azami19' : official[3][0] == String(contact[0]) ? 'https://github.com/Abiguelreyes75' : md    
-lista.push([number, ofc, nombre, description, official[3][0] == String(contact[0]) ? null : correo, lugar, enlace, bio, official[1][0] == String(contact[0]) ? 'https://www.youtube.com/@TheLoliBot-MD' : null]) }  
-lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'centergatabot@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
+description = official[0][0] == String(contact[0]) ? 'Solo temas de TekaBot' : official[1][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[2][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[3][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : desc === '' ? lenguajeGB.smsContacto5() : desc
+correo = official[0][0] == String(contact[0]) ? 'gonzaloromanodev@gmail.com' : official[1][0] == String(contact[0]) ? 'gonzaloromano18gonzaloromano@gmail.com' : official[2][0] == String(contact[0]) ? '' : mail === '' ? lenguajeGB.smsContacto6() : mail
+lugar = official[0][0] == String(contact[0]) ? '' : official[1][0] == String(contact[0]) ? '🇦🇷 Argentina' : official[2][0] == String(contact[0]) ? '' : official[3][0] == String(contact[0]) ? '' : country === '' ? lenguajeGB.smsContacto7() : country
+enlace = official[0][0] == String(contact[0]) ? 'https://github.com/teka06' : official[1][0] == String(contact[0]) ? '' : official[2][0] == String(contact[0]) ? '.' : official[3][0] == String(contact[0]) ? '.' : md    
+lista.push([number, ofc, nombre, description, official[3][0] == String(contact[0]) ? null : correo, lugar, enlace, bio, official[1][0] == String(contact[0]) ? '' : null]) }  
+lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'gonzaloromanodev@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
 await conn.sendContactArray(m.chat, lista, null, { quoted: fkontak })
 /*function handler(m) {
 const data = global.owner.filter(([id, isCreator]) => id && isCreator) 
@@ -305,7 +304,7 @@ ${cpus[0] ? `*Uso total de la CPU*
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 *CPU Core(s) Uso (${cpus.length} Core CPU)*
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}`
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', caption.trim(), fkontak) 
+await conn.sendFile(m.chat, tekaImg.getRandom(), 'gata.jpg', caption.trim(), fkontak) 
 } catch (e) {
 reportError(e)
 }   
@@ -314,8 +313,6 @@ break
 case isCommand11:
 try { 
 let donar = lenguajeGB.smsMensajeDonar().trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', lenguajeGB.smsTituloDonar() + '\n\n' + donar + '\n\n' + paypal + '\n' + ig, fkontak) 
-await conn.reply(m.sender, lenguajeGB.smsPrivadoDonar() + '\n\n' + paypal + '\n' + md, m)
 } catch (e) {
 reportError(e)
 }     
@@ -340,7 +337,7 @@ await m.reply(lenguajeGB.smsReportGB5())
 break
 }}
 
-handler.command = /^(estado|status|estate|state|stado|stats|botstat(us)?|cuenta(s)?oficiales?|gataig|(cuentas|account)s?g?b|(ig)?gata|(cuentasgata))|gata(bot)?groups?|grupos|groupsgb|grupos(ofc|degatabot|gb)|grupogb|gatagroups?|group(ofc|sofc)|c(ó|o)digo|sc|git|script|instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador|group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista|info(gata|bot)|informaci(ón|on)(gata|bot)|contactos?|contacts?|ping|speed|velocidad|rapidez|velocity|dona(te|si)|donar|apoyar|paypal|donating|aportar|report|request|reporte|bugs|bug|reportowner|reportes|reportar$/i
+handler.command = /^(estado|status|estate|state|stado|stats|botstat(us)?|cuenta(s)?oficiales?|tekaig|(cuentas|account)s?g?b|(ig)?teka|(cuentasgteka))|teka(bot)?groups?|grupos|groupsgb|grupos(ofc|detekabot|gb)|grupogb|tekagroups?|group(ofc|sofc)|c(ó|o)digo|sc|git|script|instalar(teka)?bot|proceso(del)?bot|bot(install|proceso)|installbot|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador|group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista|info(teka|bot)|informaci(ón|on)(teka|bot)|contactos?|contacts?|ping|speed|velocidad|rapidez|velocity|dona(te|si)|donar|apoyar|paypal|donating|aportar|report|request|reporte|bugs|bug|reportowner|reportes|reportar$/i
 export default handler
 
 function clockString(ms) {

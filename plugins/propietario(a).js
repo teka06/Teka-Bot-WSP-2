@@ -37,7 +37,7 @@ try {
 let d = new Date
 let date = d.toLocaleDateString('fr', { day: 'numeric', month: 'long', year: 'numeric' })
 let database = await fs.readFileSync(`./database.json`)
-let creds = await fs.readFileSync(`./GataBotSession/creds.json`)
+let creds = await fs.readFileSync(`./TekaBotSession/creds.json`)
 await conn.reply(m.sender, lenguajeGB.smsResP2(date), fkontak)
 await conn.sendMessage(m.sender, {document: database, mimetype: 'application/json', fileName: `database.json`}, { quoted: m })
 await conn.sendMessage(m.sender, {document: creds, mimetype: 'application/json', fileName: `creds.json`}, { quoted: m })
@@ -242,7 +242,7 @@ for (let id of users) {
 await delay(1500)
 await conn.copyNForward(id, content, true)
 }
-let difuUser = `${users.map(v => '🌺 wa.me/' + v.replace(/[^0-9]/g, '') + `?text=${encodeURIComponent(usedPrefix)}estado`).join('\n')}`
+let difuUser = `${users.map(v => '😎 wa.me/' + v.replace(/[^0-9]/g, '') + `?text=${encodeURIComponent(usedPrefix)}estado`).join('\n')}`
 let tolUser = users.length * 1.5
 let numUser = users.length
 await conn.reply(m.chat, lenguajeGB.smsJBDifu2(numUser, difuUser, tolUser).trim(), m)        

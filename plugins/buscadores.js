@@ -23,7 +23,7 @@ const isCommand3 = /^(bot|simi|simsimi|alexa|bixby|cortana|siri|okgoogle)$/i.tes
 const isCommand4 = /^(githubstalk|usuariogithub|usergithub)$/i.test(command)
 const isCommand5 = /^(yt(s|search))$/i.test(command)
 const isCommand6 = /^(translate|traducir|trad)$/i.test(command)
-const isCommand7 = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|gatavoz|GataBotvoz|gptvoz|ai_voz|aivoce)$/i.test(command)
+const isCommand7 = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|tekavoz|tekaBotvoz|gptvoz|ai_voz|aivoce)$/i.test(command)
 const isCommand8 = /^(gemini|bard)$/i.test(command)
 const isCommand9 = /^(bing|bingia|iabing|copilot)$/i.test(command)
     
@@ -37,7 +37,7 @@ console.log(e)
 switch (true) {     
 case isCommand1:
 //const fetch = (await import('node-fetch')).default
-let img = 'https://wpbr.mx/blog/wp-content/uploads/2015/09/Nuevo-logo-de-google.jpg' || gataMenu.getRandom()
+let img = 'https://wpbr.mx/blog/wp-content/uploads/2015/09/Nuevo-logo-de-google.jpg' || tekaMenu.getRandom()
 let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 if (args.length >= 1) {
 text = args.slice(0).join(" ")
@@ -75,7 +75,7 @@ text = m.quoted.text
 } else return conn.reply(m.chat, lenguajeGB.smsOpenai1() + `\n*${usedPrefix + command}* ${lenguajeGB.smsOpenai2()}\n\n*${usedPrefix + command}* ${lenguajeGB.smsOpenai3()}` , m)
 await conn.sendPresenceUpdate('composing', m.chat)
 try {
-let syms = `Actuaras como un Bot de WhatsApp el cual fue creado por GataNina-Li, tu seras GataBotLite-MD`
+let syms = `Actuaras como un Bot de WhatsApp el cual fue creado por TekaDev, tu seras TekaBot`
 let res = await gpt.ChatGpt(text, syms)
 await m.reply(res.text)
 } catch {
@@ -146,13 +146,13 @@ ${location || err}
 
 ${lenguajeGB.smsGit13()}
 ${type || err}`
-await conn.sendFile(m.chat, thumb || gataMenu.getRandom(), 'githubstalk.jpg', cont, fkontak) 
+await conn.sendFile(m.chat, thumb || tekaMenu.getRandom(), 'githubstalk.jpg', cont, fkontak) 
 } catch (e) {
 reportError(e)}  
 break   
         
 case isCommand5:
-if (!text) return m.reply(lenguajeGB.smsMalused2() + `*${usedPrefix + command}* GataBot`)
+if (!text) return m.reply(lenguajeGB.smsMalused2() + `*${usedPrefix + command}* TekaBot`)
 try{
 await conn.reply(m.chat, global.wait, m)
 let results = await yts(text)
@@ -255,7 +255,7 @@ reportError(e)
 break 
         
 }}
-handler.command = /^(googlef?|openai|chatgpt|ia|ai|bot|simi|simsimi|alexa|bixby|cortana|siri|okgoogle|githubstalk|usuariogithub|usergithub|(yt(s|search)|(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|gatavoz|GataBotvoz|gptvoz|ai_voz|aivoce)|(translate|traducir|trad))|gemini|bard|bing|bingia|iabing|copilot)$/i
+handler.command = /^(googlef?|openai|chatgpt|ia|ai|bot|simi|simsimi|alexa|bixby|cortana|siri|okgoogle|githubstalk|usuariogithub|usergithub|(yt(s|search)|(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|tekavoz|TekaBotvoz|gptvoz|ai_voz|aivoce)|(translate|traducir|trad))|gemini|bard|bing|bingia|iabing|copilot)$/i
 handler.register = true
 export default handler 
 

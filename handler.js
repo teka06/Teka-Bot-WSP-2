@@ -290,8 +290,8 @@ return
 
 let hl = _prefix 
 let adminMode = global.db.data.chats[m.chat].modoadmin
-let gata = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
-if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && gata) return   
+let teka = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
+if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && teka) return   
 
 if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // BOT Y OWNERS
 fail('owner', m, this)
@@ -338,7 +338,7 @@ if (xp > 2000)
 m.reply('Exp limit') // LÍMITE DE EXP
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-this.reply(m.chat, `🐈 *NO TIENE GATACOINS*`, m)
+this.reply(m.chat, `*NO TIENE TEKACOINS*`, m)
 continue // LÍMITE DE EXP    
 }
 m.exp += xp
@@ -382,7 +382,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' *GATACOINS USADO(S)* 🐱')
+m.reply(+m.money + ' *TEKACOINS USADO(S)*')
 break
 }}} catch (e) {
 console.error(e)
@@ -465,7 +465,7 @@ case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
 for (let user of participants) {
-let pp = gataImg.getRandom()
+let pp = tekaImg.getRandom()
 try {
 pp = await this.profilePictureUrl(user, 'image')
 } catch (e) {
@@ -569,7 +569,7 @@ unreg: lenguajeGB['smsUnreg'](),
 restrict: lenguajeGB['smsRestrict'](),
 }[type]
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '😻 𝗦𝘂𝗽𝗲𝗿 ' + gt + ' 😻', '🌟 centergatabot.gmail.com'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, yt, nna, nn, nnn, ig, paypal, fb].getRandom() }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '👨‍🦽 𝗦𝘂𝗽𝗲𝗿 ' + gt + ' 👨‍🦽', '✉️ gonzaloromanodev@gmail.com'].getRandom(), thumbnail: tekaImg.getRandom(), sourceUrl: [gt, md, yt, ig, fb].getRandom() }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
