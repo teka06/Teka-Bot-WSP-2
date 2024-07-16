@@ -1,34 +1,9 @@
-<p align="center"> 
-<img src="https://i.imgur.com/AwlL9kc.jpeg" alt="GataBotLite-MD" width="500"/>
-</p>
-<p align="center">
-<a href="https://github.com/GataNina-Li/GataBot-MD"><img title="GataBot-MD" src="https://img.shields.io/badge/🌸 ESTÁ ES UNA VERSIÓN SIMPLIFICADA DE GataBotMD 🌸 -red?colorA=%233CCED8&colorB=%233CCED8&style=for-the-badge"></a>
-</p>
-
-<div align="center">
-  
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:centergatabot@gmail.com)
-[![Support](https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/SoporteGataBot)
-[![WhatsApp](https://img.shields.io/badge/STAFF-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/message/C45GXBEFTPONE1)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/groups/872989990425789/)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@gatadios)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/gata_dios)
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/OficialGD)
-</div>
-
-### Cuentas Oficiales:
-> Al acceder a la plataforma, obtendrás acceso a todos los enlaces oficiales de GataBot. Además, te mantendremos informado con boletines y mensajes exclusivos sobre las últimas novedades. La página se actualiza constantemente para ofrecerte la información más relevante. ¡No te pierdas ninguna actualización y únete a nuestra comunidad ahora mismo!
-
-<a href="https://www.atom.bio/gatabot/">
-<img src="https://img.shields.io/badge/GataBot_Accounts-000000%7D?style=for-the-badge&logo=biolink&logoColor=white">
-</a>
-  
 #### DISPONIBLE EN:
 > - [x] TERMUX, REPLIT, WINDOWS, ZIPPONODES, BOXMINE-HOST
 
 
 [`♻️ App Termux`](https://f-droid.org/es/packages/com.termux/)
-### 🌸 INSTALACIÓN AUTOMÁTICA 🌸
+###  INSTALACIÓN AUTOMÁTICA 
 <a href="https://youtu.be/tzM0f_N8BII">
 <img src="https://img.shields.io/badge/Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tutorial"> </a>
 
@@ -55,7 +30,7 @@ npm install
 npm start
 ```
 
-### 🍁 TERMUX 24/7 🍁 
+###  TERMUX 24/7 
 > Comandos para realizar una ejecución 24/7
 - INICIAR
 > Use estos comandos dentro de la carpeta GataBotLite-MD
@@ -166,7 +141,7 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 
 - [x] **Configuración** <details><summary>**Ajustes del Servidor - GataBotLite-MD**</summary><img src="https://telegra.ph/file/0b7ba2b142f21c676b84a.jpg"></details>
 ------------------------
-## 🌻 INSTALACIÓN PARA WINDOWS/VPS/RDP 🌻
+##  INSTALACIÓN PARA WINDOWS/VPS/RDP 
 <a href="https://youtu.be/SaxYKnnZo3E">
 <img src="https://img.shields.io/badge/Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tutorial"> </a>
 
@@ -206,23 +181,3 @@ Get-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 ```
 > Aparecerá un mensaje de advertencia preguntando si deseas cambiar la Política de ejecución. Confirma con "Y" y presiona Enter. Luego ya puede volver a ejecutar el comando `yarn`
-
-### 💠 [`IDIOMAS DISPONIBLES PARA GATABOTLITE`](https://github.com/GataNina-Li/GataBotLite-MD/blob/f406e0f1bba1ca7cd6ee4ef3208e156135a24dce/config.js#L31) 
-> **Multi Lenguaje Dinámico GB:** Disponibilidad de usar varios idiomas simultáneamente.
-#### ✨ Español  [`Editar Idioma`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/espanol.js)
-#### ✨ Inglés (English) [`Edit Language`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/ingles.js)
-#### ✨ Portugués (Português) [`Idioma de Edição`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/portugues.js)
-#### ✨ Indonesio (Bahasa Indonesia) [`Mengedit Bahasa`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/indonesio.js) 
-#### ✨ Árabe (عرب) [`عدل اللغة`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/arabe.js)
-#### ✨ Alemán (Deutsch) [`Sprache bearbeiten`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/aleman.js)
-#### ✨ Italiano (Italiano) [`Modifica lingua`](https://github.com/GataNina-Li/GataBotLite-MD/blob/master/lib/idiomas/italiano.js)
-----
-> **Note** The translations are not perfect, it is only a reference, if you want to collaborate with the language or with another that is not on the list, contact me [`Contact me`](https://wa.me/message/C45GXBEFTPONE1)
-
-### 😸 CREADORA 
-[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
-
-### 😸 DESARROLLADORES
-<a href="https://github.com/GataNina-Li/GataBotLite-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=GataNina-Li/GataBotLite-MD" /> 
-</a>
