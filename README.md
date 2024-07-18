@@ -22,7 +22,7 @@ termux-setup-storage
 apt update
 apt upgrade
 pkg install -y git nodejs ffmpeg imagemagick yarn
-git clone  
+git clone https://github.com/teka06/Teka-Bot-WSP-2.git
 cd Teka-Bot-WSP-2
 yarn install
 npm install
@@ -66,7 +66,7 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 ```
 ----
 ### 💎 FlarexCloud
-> Empiece a usar FlarexCloud para activar **GataBotLite-MD**
+> Empiece a usar FlarexCloud para activar **Teka-Bot-WSP-2**
 
 <a href="https://www.flarex.cloud"><img src="https://cdn.flarex.cloud/deploy.png" height="60px"></a>
 ### Información sobre FlarexCloud
@@ -81,7 +81,7 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 ### 📦⛏️ BOXMINE HOST 
 [![YouTube](https://img.shields.io/badge/BoxMine_Host-World-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@boxminehost)
 
-> Tutorial para activar **GataBotLite-MD** en un servidor reconocido y para todos.
+> Tutorial para activar **Teka-Bot-WSP-2** en un servidor reconocido y para todos.
 
 <a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
 ### BoxMine World
@@ -92,10 +92,10 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 - **Dudas sobre el Host:** [`Discord`](https://discord.gg/84qsr4v) _(Preguntar por Vicemi)_
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Va71C1q2UPBOICnxu83r)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - GataBotLite-MD**</summary><img src="https://telegra.ph/file/2c6d9f2888d9687c6815d.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Teka-Bot-WSP-2**</summary><img src="https://telegra.ph/file/2c6d9f2888d9687c6815d.jpg"></details>
 ----
 ### 🔵 CAFIREXOS 
-> Optimice la implementación de **GataBot** mediante la integración en un servicio de alojamiento de alto rendimiento.
+> Optimice la implementación de **TekaBot** mediante la integración en un servicio de alojamiento de alto rendimiento.
 
 <a href="https://www.cafirexos.com"><img src="https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo.png" height="125px"></a>
 ### Información del Host
@@ -109,10 +109,10 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 - **Correo:** [`Aquí`](mailto:contacto@cafirexos.com)
 - **Contacto:** [`Diego Flores`](https://wa.me/50497150165)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - GataBotLite-MD**</summary><img src="https://telegra.ph/file/7495a0f937c20bcbf8b9b.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Teka-Bot-WSP-2**</summary><img src="https://telegra.ph/file/7495a0f937c20bcbf8b9b.jpg"></details>
 ----
 ### ☁️ VORTEXUS CLOUD - HOST
-> Integra **GataBot** en un servicio de alojamiento eficiente.
+> Integra **TekaBot** en un servicio de alojamiento eficiente.
 
 <a href="https://vortexuscloud.com"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
 ### vortexus cloud
@@ -124,10 +124,10 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 - **Contacto:** [`Aquí`](https://wa.me/258858119033) 
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - GataBotLite-MD**</summary><img src="https://telegra.ph/file/e29855655f6c2943661f8.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Teka-Bot-WSP-2**</summary><img src="https://telegra.ph/file/e29855655f6c2943661f8.jpg"></details>
 -----
 ### 🟢 INFINITY-HOST
-> Activar **GataBotLite-MD** 24/7 activo en Infinity-Host
+> Activar **Teka-Bot-WSP-2** 24/7 activo en Infinity-Host
 
 <a href="https://dash.infinity-wa.com"><img src="https://i.imgur.com/CiNEYMc.png" height="140px"></a>
 ### Información del Host
@@ -138,7 +138,7 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 - **Grupo de WhatsApp:** [`Aquí`](https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV)
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - GataBotLite-MD**</summary><img src="https://telegra.ph/file/0b7ba2b142f21c676b84a.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Teka-Bot-WSP-2**</summary><img src="https://telegra.ph/file/0b7ba2b142f21c676b84a.jpg"></details>
 ------------------------
 ##  INSTALACIÓN PARA WINDOWS/VPS/RDP 
 <a href="https://youtu.be/SaxYKnnZo3E">
@@ -149,8 +149,8 @@ npm install -g ffmpeg imagemagick git yarn && npm i && node --no-warnings index.
 * Descargar e instala FFmpeg [`Aquí`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
 * Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
 ```bash
-git clone https://github.com/GataNina-Li/GataBotLite-MD
-cd GataBotLite-MD
+git clone https://github.com/teka06/Teka-Bot-WSP-2.git
+cd Teka-Bot-WSP-2
 npm install -g yarn
 yarn
 npm install 
