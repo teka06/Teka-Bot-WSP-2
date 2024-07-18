@@ -22,8 +22,8 @@ termux-setup-storage
 apt update
 apt upgrade
 pkg install -y git nodejs ffmpeg imagemagick yarn
-git clone https://github.com/GataNina-Li/GataBotLite-MD 
-cd GataBotLite-MD
+git clone  
+cd Teka-Bot-WSP-2
 yarn install
 npm install
 npm start
@@ -32,7 +32,7 @@ npm start
 ###  TERMUX 24/7 
 > Comandos para realizar una ejecución 24/7
 - INICIAR
-> Use estos comandos dentro de la carpeta GataBotLite-MD
+> Use estos comandos dentro de la carpeta Teka-Bot-WSP-2
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ```
@@ -42,7 +42,7 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 pm2 stop all && pm2 unstartup
 ```
 - REANUDAR 
-> Reanudar los procesos, usar dentro de la carpeta GataBotLite-MD 
+> Reanudar los procesos, usar dentro de la carpeta Teka-Bot-WSP-2
 ```bash
 pm2 start index.js 
 ```
